@@ -33,7 +33,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+To ensure compatibility and optimal loading times, the GIF was resized and reformatted. As a result, the quality of the GIF may appear lower.
 
 ## License
 
