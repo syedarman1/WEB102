@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: 'Cabin';
-    background-color: #758190;
+    font-family: 'Cabin', sans-serif;
+    background-color: #eef6f9; /* Light, bubbly background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text for contrast */
+    line-height: 1.6;
 }
 
 #tentacles {
@@ -11,65 +15,114 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
-    padding: 1%;
+    background-color: #8ecae6; /* Soft blue for header */
+    padding: 1.5%;
     align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    justify-content: center;
+    border-radius: 20px; /* Rounded for bubbly feel */
+    margin: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Styling for stats-container */
 .stats-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Spacing between items */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #caf0f8; /* Very light blue for bubbly feel */
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
+/* Add hover effect for stats-container */
+.stats-container:hover {
+    transform: scale(1.02); /* Subtle growth on hover */
+}
+
+/* Styling for stats cards */
 .stats-card {
-    background-color: #a8b0bc;
-    border-radius: 7px;
-    padding: 1%;
-    margin: 1%;
-    width: 100%;
+    background-color: #ffffff; /* White for contrast */
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin: 10px;
+    flex: 1; /* Responsive width */
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.stats-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Large text for stats numbers */
 #num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #023047; /* Dark blue for contrast */
 }
 
+/* Styling for games container */
 #games-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 25px; /* Spacing between game cards */
+    margin: 20px;
 }
 
-.game-img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
-}
-
+/* Game card styling */
 .game-card {
-    background-color: #FFFFFF;
-    padding: 1%;
-    margin: 1%;
-    width: 300px;
+    background-color: #ffffff; /* White for contrast */
+    padding: 20px;
+    margin: 10px;
+    width: 280px;
     text-align: center;
-    border-radius: 7px;
+    border-radius: 20px; /* Rounded for bubbly effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .game-card:hover {
-    cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Game images styling */
+.game-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for buttons */
 #button-container {
     text-align: center;
+    margin: 20px 0;
 }
 
 button {
-    font-family: 'Cabin';
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #8ecae6; /* Soft blue */
     border: none;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 7px;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 30px; /* Extra round for bubbly effect */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Button depth */
+}
+
+button:hover {
+    background-color: #219ebc; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight growth */
 }
